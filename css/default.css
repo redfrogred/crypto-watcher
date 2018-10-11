@@ -56,3 +56,13 @@ body {
   line-height: 1.5;
   background-color: #eee;
 }
+
+h1 {
+	padding: 10px;	
+	font-weight: bold;
+}
+
+#messageBox {
+		background-color: #ccc;
+		padding: 10px;
+}
