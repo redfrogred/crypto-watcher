@@ -66,3 +66,28 @@ h1 {
 		background-color: #ccc;
 		padding: 10px;
 }
+
+.red {
+	color: Red;	
+}
+
+table {
+	width: calc(100% - 20px);
+	margin: 10px;
+	font-size: 80%;
+}
+
+table td {
+    padding: 3px;
+    border: 1px solid #bbb;
+    vertical-align: middle;
+    position: relative;
+		text-align: center;
+}
+
+tr.heading td {
+    background-color: #ccc;
+    font-size: 80%;
+    color: #000;
+    font-weight: bold;
+}

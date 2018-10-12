@@ -1,0 +1,14 @@
+[ 
+  { 
+    "coin": "eos",
+    "coinDisplayName": "EOS",
+    "coinFetchName": "eos",
+		"coinAmount": "99"
+  },
+  { 
+    "coin": "btc",
+    "coinDisplayName": "btc",
+    "coinFetchName": "bitcoin",
+		"coinAmount": ".5"
+  }	
+]
