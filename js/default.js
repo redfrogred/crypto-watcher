@@ -2,7 +2,7 @@ $(function() {
 	
 	var APP = {};
 			APP.name = 'Crypto Watcher';
-			APP.version = '0.02';
+			APP.version = '0.03';
 			APP.coinsURL = './coins.json';
 			APP.statusIndex = 1;
 			APP.status = [ 'halted', 'initialized', 'ok' ];
@@ -11,7 +11,7 @@ $(function() {
 	
 	function init() {
 		console.log ( APP.name + ' version ' + APP.version + ' initializing...' );
-		$( 'h1' ).text( APP.name + ' ' + timestamp() );
+		$( 'h1' ).html( APP.name + ' <span>' + timestamp() + '</span>' );
 		document.title = APP.name + ' v' + APP.version;
 		fetchCoinList();
 		return;
@@ -20,7 +20,8 @@ $(function() {
 	// ----------------------------------------
 	
 	function timestamp() {	
-		return new Date().toLocaleString();
+		var d = new Date().toLocaleString();
+		return d.replace ( ',', ' -' );
 	}
 
 	// ----------------------------------------
@@ -47,7 +48,7 @@ $(function() {
 		})
 		.done(function (response) {
 			$.each(response, function ( index, value ) {
-				tempStr += '<tr id="' + this.coin + '" data-coinFetchName="' + this.coinFetchName + '" class="coin"><td class="icon"></td><td class="coinDisplayName">' + this.coinDisplayName + '</td><td class="coinPrice"></td><td class="coin1hr"></td><td class="coin24hr"></td><td class="coinAmount">' + this.coinAmount + '</td><td class="coinPortfolio"></td></tr>'
+				tempStr += '<tr id="' + this.coin + '" data-coinFetchName="' + this.coinFetchName + '" class="coin"><td class="icon" title="' + this.coinFullname + '"><br /></td><td class="coinDisplayName">' + this.coinDisplayName + '</td><td class="coinPrice"></td><td class="coin1hr"></td><td class="coin24hr"></td><td class="coinAmount">' + this.coinAmount + '</td><td class="coinPortfolio"></td></tr>'
 			});
 			// create table
 			if ( tempStr != '' ) {
