@@ -2,12 +2,14 @@
   { 
     "coin": "eos",
     "coinDisplayName": "EOS",
+    "coinFullname": "EOS",
     "coinFetchName": "eos",
 		"coinAmount": "99"
   },
   { 
     "coin": "btc",
     "coinDisplayName": "btc",
+    "coinFullname": "Bitcoin",		
     "coinFetchName": "bitcoin",
 		"coinAmount": ".5"
   }	
