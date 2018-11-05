@@ -1,5 +1,12 @@
 [ 
   { 
+    "coin": "btc",
+    "coinDisplayName": "btc",
+    "coinFullname": "Bitcoin",		
+    "coinFetchName": "bitcoin",
+		"coinAmount": ".5"
+  },
+  { 
     "coin": "eos",
     "coinDisplayName": "EOS",
     "coinFullname": "EOS",
@@ -7,10 +14,24 @@
 		"coinAmount": "99"
   },
   { 
-    "coin": "btc",
-    "coinDisplayName": "btc",
-    "coinFullname": "Bitcoin",		
-    "coinFetchName": "bitcoin",
-		"coinAmount": ".5"
-  }	
+    "coin": "eth",
+    "coinDisplayName": "eth",
+    "coinFullname": "Ethereum",		
+    "coinFetchName": "ethereum",
+		"coinAmount": "3"
+  },	
+  { 
+    "coin": "ltc",
+    "coinDisplayName": "ltc",
+    "coinFullname": "Litecoin",		
+    "coinFetchName": "litecoin",
+		"coinAmount": "5"
+  },	
+  { 
+    "coin": "xrb",
+    "coinDisplayName": "xrb",
+    "coinFullname": "Raiblocks",		
+    "coinFetchName": "xrb",
+		"coinAmount": "200"
+  }		
 ]
